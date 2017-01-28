@@ -1,6 +1,6 @@
 import { AtomswiftProtoPage } from './app.po';
 
-describe('atomswift-proto App', function() {
+describe('atomswift-webapp App', function() {
   let page: AtomswiftProtoPage;
 
   beforeEach(() => {
