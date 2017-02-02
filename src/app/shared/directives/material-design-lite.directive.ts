@@ -3,13 +3,14 @@ import { Directive, AfterViewChecked } from '@angular/core';
 declare var componentHandler: any;
 
 @Directive({
-  selector: '[appMdl]'
+  selector: '[aswMDL]'
 })
-export class MaterialDesignLightDirective implements AfterViewChecked {
+export class MaterialDesignLiteDirective implements AfterViewChecked {
 
   ngAfterViewChecked() {
     if (componentHandler) {
       componentHandler.upgradeAllRegistered();
     }
   }
+
 }

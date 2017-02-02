@@ -2,6 +2,7 @@
 
 #vscode
 /vscode
+/.vscode
 
 # compiled output
 /dist

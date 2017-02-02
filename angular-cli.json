@@ -15,15 +15,14 @@
       "main": "main.ts",
       "test": "test.ts",
       "tsconfig": "tsconfig.json",
-      "prefix": "app",
+      "prefix": "asw",
       "mobile": false,
       "styles": [
-        "../node_modules/material-design-lite/material.min.css",
-        "../node_modules/material-design-icons/iconfont/material-icons.css",
+        "../node_modules/skeleton-css/css/normalize.css",
+        "../node_modules/skeleton-css/css/skeleton.css",
         "styles.css"
       ],
       "scripts": [
-        "../node_modules/material-design-lite/material.min.js"
       ],
       "environments": {
         "source": "environments/environment.ts",
