@@ -6,6 +6,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { MaterialDesignLiteDirective } from './shared/directives/material-design-lite.directive';
 import { AppComponent } from './app.component';
 
+import { ArticleCardComponent } from './blog/article-card/article-card.component';
+import { ArticleDataService } from './blog/shared/article-data.service';
 import { BlogComponent } from './blog/blog.component';
 import { HeaderComponent } from './header/header.component';
 import { TeamComponent } from './team/team.component';
@@ -14,6 +16,7 @@ import { EventsComponent } from './events/events.component';
 import { AchievmentsComponent } from './achievments/achievments.component';
 import { UltimateComponent } from './ultimate/ultimate.component';
 import { MediaComponent } from './media/media.component';
+
 
 const appRoutes: Routes = [
   { path: 'blog', component: BlogComponent },
@@ -42,7 +45,8 @@ const appRoutes: Routes = [
     EventsComponent,
     AchievmentsComponent,
     UltimateComponent,
-    MediaComponent
+    MediaComponent,
+    ArticleCardComponent
   ],
   imports: [
     RouterModule.forRoot(appRoutes),
@@ -50,7 +54,7 @@ const appRoutes: Routes = [
     FormsModule,
     HttpModule
   ],
-  providers: [],
+  providers: [ArticleDataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
