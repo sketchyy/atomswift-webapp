@@ -23,7 +23,7 @@ var ArticleDataService = (function () {
         this.articles = ['1', '2', '3', '4', '5'].map(function (id) {
             var article = new __WEBPACK_IMPORTED_MODULE_0__article_model__["a" /* Article */]();
             article.id = id;
-            article.title = "!Title " + id;
+            article.title = "Title " + id;
             article.content = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. \n        Maecenas vulputate enim sed tortor viverra malesuada. In sit amet nisi nec turpis consectetur luctus vitae id ex.\n        Mauris posuere hendrerit diam at maximus. ";
             return article;
         });
