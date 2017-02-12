@@ -746,7 +746,7 @@ module.exports = "<asw-header></asw-header>\r\n\r\n<div class=\"container\">\r\n
 /***/ 686:
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"card\">\n  <h3>{{article.title}}</h3>\n  <div>{{article.content}}</div>\n</div>"
+module.exports = "<div class=\"card\">\n  <h3>!!!{{article.title}}</h3>\n  <div>{{article.content}}</div>\n</div>"
 
 /***/ }),
 
