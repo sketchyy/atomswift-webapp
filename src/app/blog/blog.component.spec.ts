@@ -1,13 +1,13 @@
-import { ArticleDataService } from './shared/article-data.service';
-import { ArticleCardComponent } from './article-card/article-card.component';
+import { ArticleDataService } from "./shared/article-data.service";
+import { ArticleCardComponent } from "./article-card/article-card.component";
 /* tslint:disable:no-unused-variable */
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-import { By } from '@angular/platform-browser';
-import { DebugElement } from '@angular/core';
+import { async, ComponentFixture, TestBed } from "@angular/core/testing";
+import { By } from "@angular/platform-browser";
+import { DebugElement } from "@angular/core";
 
-import { BlogComponent } from './blog.component';
+import { BlogComponent } from "./blog.component";
 
-describe('BlogComponent', () => {
+describe("BlogComponent", () => {
   let component: BlogComponent;
   let fixture: ComponentFixture<BlogComponent>;
 
@@ -24,7 +24,7 @@ describe('BlogComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  it("should create", () => {
     expect(component).toBeTruthy();
   });
 });

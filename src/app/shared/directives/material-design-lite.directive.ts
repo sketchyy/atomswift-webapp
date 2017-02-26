@@ -1,9 +1,9 @@
-import { Directive, AfterViewChecked } from '@angular/core';
+import { Directive, AfterViewChecked } from "@angular/core";
 
 declare var componentHandler: any;
 
 @Directive({
-  selector: '[aswMDL]'
+  selector: "[aswMDL]"
 })
 export class MaterialDesignLiteDirective implements AfterViewChecked {
 

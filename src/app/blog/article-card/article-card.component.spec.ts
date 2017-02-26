@@ -1,12 +1,12 @@
-import { Article } from './../shared/article.model';
+import { Article } from "./../shared/article.model";
 /* tslint:disable:no-unused-variable */
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-import { By } from '@angular/platform-browser';
-import { DebugElement } from '@angular/core';
+import { async, ComponentFixture, TestBed } from "@angular/core/testing";
+import { By } from "@angular/platform-browser";
+import { DebugElement } from "@angular/core";
 
-import { ArticleCardComponent } from './article-card.component';
+import { ArticleCardComponent } from "./article-card.component";
 
-describe('ArticleCardComponent', () => {
+describe("ArticleCardComponent", () => {
   let component: ArticleCardComponent;
   let fixture: ComponentFixture<ArticleCardComponent>;
 
@@ -21,16 +21,16 @@ describe('ArticleCardComponent', () => {
     fixture = TestBed.createComponent(ArticleCardComponent);
     component = fixture.componentInstance;
     component.article = new Article();
-    component.article.title = 'Test Title';
+    component.article.title = "Test Title";
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  it("should create", () => {
     expect(component).toBeTruthy();
   });
 
-  it('should contains tile', () => {
-    const el: HTMLElement = fixture.debugElement.query(By.css('h3')).nativeElement;
-    expect(el.textContent).toBe('Test Title');
+  it("should contains tile", () => {
+    const el: HTMLElement = fixture.debugElement.query(By.css("h3")).nativeElement;
+    expect(el.textContent).toBe("Test Title");
   });
 });

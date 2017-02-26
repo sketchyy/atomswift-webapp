@@ -1,11 +1,11 @@
 /* tslint:disable:no-unused-variable */
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-import { By } from '@angular/platform-browser';
-import { DebugElement } from '@angular/core';
+import { async, ComponentFixture, TestBed } from "@angular/core/testing";
+import { By } from "@angular/platform-browser";
+import { DebugElement } from "@angular/core";
 
-import { UltimateComponent } from './ultimate.component';
+import { UltimateComponent } from "./ultimate.component";
 
-describe('UltimateComponent', () => {
+describe("UltimateComponent", () => {
   let component: UltimateComponent;
   let fixture: ComponentFixture<UltimateComponent>;
 
@@ -22,7 +22,7 @@ describe('UltimateComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  it("should create", () => {
     expect(component).toBeTruthy();
   });
 });

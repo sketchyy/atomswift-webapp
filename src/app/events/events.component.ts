@@ -1,9 +1,9 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from "@angular/core";
 
 @Component({
-  selector: 'asw-events',
-  templateUrl: './events.component.html',
-  styleUrls: ['./events.component.css']
+  selector: "asw-events",
+  templateUrl: "./events.component.html",
+  styleUrls: ["./events.component.css"]
 })
 export class EventsComponent implements OnInit {
 

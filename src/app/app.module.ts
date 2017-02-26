@@ -15,6 +15,9 @@ import { EventsComponent } from "./events/events.component";
 import { AchievmentsComponent } from "./achievments/achievments.component";
 import { UltimateComponent } from "./ultimate/ultimate.component";
 import { MediaComponent } from "./media/media.component";
+import { SidebarComponent } from "./sidebar/sidebar.component";
+import { AboutTeamComponent } from "./team/about-team/about-team.component";
+import { CalendarComponent } from "./team/calendar/calendar.component";
 
 
 const appRoutes: Routes = [
@@ -45,7 +48,10 @@ const appRoutes: Routes = [
     AchievmentsComponent,
     UltimateComponent,
     MediaComponent,
-    ArticleCardComponent
+    ArticleCardComponent,
+    SidebarComponent,
+    AboutTeamComponent,
+    CalendarComponent
   ],
   imports: [
     RouterModule.forRoot(appRoutes),

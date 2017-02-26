@@ -1,12 +1,12 @@
-import { Article } from './article.model';
-import { Injectable } from '@angular/core';
+import { Article } from "./article.model";
+import { Injectable } from "@angular/core";
 
 @Injectable()
 export class ArticleDataService {
   articles: Article[];
 
   constructor() {
-    this.articles = ['1', '2', '3', '4', '5'].map(id => {
+    this.articles = ["1", "2", "3", "4", "5"].map(id => {
       const article = new Article();
       article.id = id;
       article.title = `Title ${id}`;
