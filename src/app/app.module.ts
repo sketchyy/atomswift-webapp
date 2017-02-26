@@ -1,36 +1,35 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
-import { HttpModule } from '@angular/http';
-import { RouterModule, Routes } from '@angular/router';
-import { MaterialDesignLiteDirective } from './shared/directives/material-design-lite.directive';
-import { AppComponent } from './app.component';
-
-import { ArticleCardComponent } from './blog/article-card/article-card.component';
-import { ArticleDataService } from './blog/shared/article-data.service';
-import { BlogComponent } from './blog/blog.component';
-import { HeaderComponent } from './header/header.component';
-import { TeamComponent } from './team/team.component';
-import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
-import { EventsComponent } from './events/events.component';
-import { AchievmentsComponent } from './achievments/achievments.component';
-import { UltimateComponent } from './ultimate/ultimate.component';
-import { MediaComponent } from './media/media.component';
+import { BrowserModule } from "@angular/platform-browser";
+import { NgModule } from "@angular/core";
+import { FormsModule } from "@angular/forms";
+import { HttpModule } from "@angular/http";
+import { RouterModule, Routes } from "@angular/router";
+import { MaterialDesignLiteDirective } from "./shared/directives/material-design-lite.directive";
+import { AppComponent } from "./app.component";
+import { ArticleCardComponent } from "./blog/article-card/article-card.component";
+import { ArticleDataService } from "./blog/shared/article-data.service";
+import { BlogComponent } from "./blog/blog.component";
+import { NavbarComponent } from "./navbar/navbar.component";
+import { TeamComponent } from "./team/team.component";
+import { PageNotFoundComponent } from "./page-not-found/page-not-found.component";
+import { EventsComponent } from "./events/events.component";
+import { AchievmentsComponent } from "./achievments/achievments.component";
+import { UltimateComponent } from "./ultimate/ultimate.component";
+import { MediaComponent } from "./media/media.component";
 
 
 const appRoutes: Routes = [
-  { path: 'blog', component: BlogComponent },
-  { path: 'team', component: TeamComponent },
-  { path: 'events', component: EventsComponent },
-  { path: 'achievments', component: AchievmentsComponent },
-  { path: 'ultimate', component: UltimateComponent },
-  { path: 'media', component: MediaComponent },
+  { path: "blog", component: BlogComponent },
+  { path: "team", component: TeamComponent },
+  { path: "events", component: EventsComponent },
+  { path: "achievments", component: AchievmentsComponent },
+  { path: "ultimate", component: UltimateComponent },
+  { path: "media", component: MediaComponent },
   {
-    path: '',
-    redirectTo: '/blog',
-    pathMatch: 'full'
+    path: "",
+    redirectTo: "/blog",
+    pathMatch: "full"
   },
-  { path: '**', component: PageNotFoundComponent }
+  { path: "**", component: PageNotFoundComponent }
 ];
 
 
@@ -39,7 +38,7 @@ const appRoutes: Routes = [
     AppComponent,
     MaterialDesignLiteDirective,
     BlogComponent,
-    HeaderComponent,
+    NavbarComponent,
     TeamComponent,
     PageNotFoundComponent,
     EventsComponent,

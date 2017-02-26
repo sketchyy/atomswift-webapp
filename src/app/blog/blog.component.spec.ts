@@ -1,3 +1,5 @@
+import { ArticleDataService } from './shared/article-data.service';
+import { ArticleCardComponent } from './article-card/article-card.component';
 /* tslint:disable:no-unused-variable */
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
@@ -11,9 +13,9 @@ describe('BlogComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ BlogComponent ]
-    })
-    .compileComponents();
+      declarations: [BlogComponent, ArticleCardComponent],
+      providers: [ArticleDataService]
+    });
   }));
 
   beforeEach(() => {
