@@ -6,10 +6,12 @@ import { Component, OnInit } from "@angular/core";
   styleUrls: ["./calendar.component.css"]
 })
 export class CalendarComponent implements OnInit {
+  title: string;
 
   constructor() { }
 
   ngOnInit() {
+    this.title = `Tournaments/Caledar`;
   }
 
 }

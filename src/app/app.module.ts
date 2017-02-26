@@ -12,12 +12,14 @@ import { NavbarComponent } from "./navbar/navbar.component";
 import { TeamComponent } from "./team/team.component";
 import { PageNotFoundComponent } from "./page-not-found/page-not-found.component";
 import { EventsComponent } from "./events/events.component";
-import { AchievmentsComponent } from "./achievments/achievments.component";
 import { UltimateComponent } from "./ultimate/ultimate.component";
 import { MediaComponent } from "./media/media.component";
 import { SidebarComponent } from "./sidebar/sidebar.component";
 import { AboutTeamComponent } from "./team/about-team/about-team.component";
 import { CalendarComponent } from "./team/calendar/calendar.component";
+import { RosterComponent } from "./team/roster/roster.component";
+import { AchievmentsComponent } from "./team/achievments/achievments.component";
+import { TrainingsComponent } from "./team/trainings/trainings.component";
 
 
 const appRoutes: Routes = [
@@ -51,7 +53,10 @@ const appRoutes: Routes = [
     ArticleCardComponent,
     SidebarComponent,
     AboutTeamComponent,
-    CalendarComponent
+    CalendarComponent,
+    RosterComponent,
+    AchievmentsComponent,
+    TrainingsComponent
   ],
   imports: [
     RouterModule.forRoot(appRoutes),
